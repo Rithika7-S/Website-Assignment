@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ body{
+     background-color: #ac00e6;
+     background-image: linear-gradient(to bottom right, #ac00e6,#cc0099);
+     font-family: sans-serif;
+     margin-top: 40px;
+ } 
+ .regform{
+     width: 700px;
+     background-color: rgb(0,0,6);
+     color: white;
+     text-shadow: 2px 2px 6px #f2f2f2;
+     margin:auto;
+     padding: 10px 0px 10px 0px;
+     text-align: center;
+     border-radius: 15px 15px 0px 0px ;
+} 
+.main{
+    background-color: rgb(0,0,0,0.5);
+    width: 700px;
+    margin: auto;
+}
+form{
+    padding: 10px;
+
+}
+#name{
+    width: 100%;
+    height: 100px;
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.firstname{
+    position: relative;
+    left: 100px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.lastname{
+    position: relative;
+    left: 317px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.firstlabel{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 103px;
+    top:-45px;
+}
+.lastlabel{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 392px;
+    top:-76px;
+
+}
+.email{
+    position: relative;
+    left:100px;
+    top:-37px;
+    line-height: 40px;
+    width: 480px;
+    border-radius: 6px;
+    padding: 0px 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+.code{
+    position: relative;
+    left:100px;
+    top:-37px;
+    line-height: 40px;
+    width: 95px;
+    border-radius: 6px;
+    padding: 0px 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+.number{
+    position: relative;
+    left:200px;
+    top:-80px;
+    line-height: 40px;
+    width: 255px;
+    border-radius: 6px;
+    padding: 0px 22px;
+    font-size: 16px;
+    color: #555;
+}
+.area-code{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 100px;
+    top:-43px;
+
+}
+.phone-number{
+    position: relative;
+    color: #E5E5E5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: -100px;
+    top:-43px;
+
+}
+.gender{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    padding-right: 70px;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white;
+}
+.radio{
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white; 
+}
+.button{
+    background-color: #3BAF9F;
+    display: block;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid#366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+    font-size: 25px;
+}
+.button:hover{
+    background-color: #5390F5;
+}
+
+    
+</style>
+</head>
+<body>
+    <div class="regform"><h1>Registration Form</h1></div>
+    <div class="main">
+    <form>
+        <div id="name">
+            <h2 class="name">Name</h2>
+            <input class="firstname" type="text" name="first_name" placeholder="Rithika"required><br>
+            <label class="firstlabel">firstname</label>
+            <input class="lastname" type="text" name="last_name" placeholder="S"required><br>
+            <label class="lastlabel">lastname</label>
+        </div>
+
+            <h2 class="name">E-mail</h2> 
+            <input class="email" type="mail" name="email" placeholder="abcd@gamil.com" required><br>
+            <h2 class="name">Phone</h2>
+            <input class="code" text="text" name="area_code" placeholder="+91"><br>
+            <label class="area-code">Area Code</label>
+            <input class="number" type="text" name="phone" required placeholder="XXXXXXXXXX">
+            <label class="phone-number">Phone Number</label>
+            <h2 class="name">Gender</h2>
+            <input type="radio" id="male" class="gender" name="rpref" value="Male"required>
+            <label for="male" class="radio">Male</label>
+            <input type="radio" id="female" class="gender" name="rpref" value="Female">
+            <label for="female" class="radio">Female</label>
+            <button type="submit" class="button">Register</button>
+    </form>
+    </div>
+    <script>
+        function ValidateEmail(mail) 
+    {
+     if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))
+      {
+        return (true)
+      }
+        alert("You have entered an invalid email address!")
+        return (false)
+    }
+    
+    </script>
+</body>
+</html>

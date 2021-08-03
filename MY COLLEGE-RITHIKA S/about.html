@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://kit.fontawesome.com/b417169e35.js" crossorigin="anonymous"></script>
+<style>
+.header{
+ margin:0;
+ width: auto;
+ 
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+    margin-top: -40px;
+    margin-right: -10px;
+    margin-left: 250px;
+    padding-left: 2px;
+    width: 100px;
+    overflow: hidden;
+    background-color:  #b30059;
+    color:white;
+      -moz-border-radius-bottomleft: 12px;
+      -webkit-border-bottom-left-radius: 18px;
+}
+nav a{
+    display: block;
+    list-style: none;
+    margin: 2px 5px;
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+  background-color: black;
+  color: white;
+  height: 35px;
+}
+
+nav a.active {
+  background-color: #800040;
+  color: white;
+  height: 35px;
+  width: auto;
+  margin-left: -2px;
+ 
+ 
+  
+  
+}
+
+.button{
+	background-color: #00e600;
+	color: white;
+	padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 12px;
+    cursor: pointer;
+    width: auto;
+    
+}
+.button{
+  position: relative;
+  left:950px;
+  bottom:1px;
+  top: -30px;
+}
+.button{border-radius: 40px;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 100px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  text-align: center;
+}
+.reviews{
+    column-count: 2;
+    column-gap: 10px;
+    color:black;
+    font-family:comicsans;
+    font-size: 20px;
+    border:none;
+    margin: 30px;
+    padding: 100px 20px;
+    background-color:#ffffb3;
+    box-sizing: content-box;
+    
+}
+.about{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  padding: 0 0 20px 0;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.1s;
+  animation-name: fade;
+  animation-duration: 2.1s;
+}
+#circle-icon {
+    background: #ffc0c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 30px;
+}
+#circle-icon2 {
+    background: #cc99ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 30px;
+  
+
+}
+#circle-icon3 {
+    background: #80ff80;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.icon{
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -80px;
+  left:100px;
+  text-align: center;
+
+}
+.icon2{
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -80px;
+  left:400px;
+  text-align: center;
+
+}
+.icon3{
+  color: #f2f2f2;
+  font-size: 35px;
+  padding: 12px 20px;
+  position: absolute;
+  bottom: -80px;
+  left:700px;
+  text-align: center;
+
+}
+.sub-header{
+  height: 100vh;
+  width: 100%;
+  background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(
+'graduate.jpg');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px #f2f2f2;
+  font-size: 36px;
+}
+.sub-header h1{
+  padding-top: 170px;
+}
+.about-us{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+  
+}
+.about-col img{
+  width: 100%;
+  left: 20px;
+}
+.about-col h1{
+ padding: 1px 20px 3px;
+ font-family: fantasy;
+ color: #800040;
+}
+.about-col p{
+  padding: 1px 20px 3px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+  border-width: 1px;
+  border-color: #ffd700;
+  color:#ffd700 ;
+  background-color: white;
+  padding: 5px 20px 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.btn:hover{
+  background-color: #800040;
+  color: #f2f2f2;
+  border:none
+}
+#more {display: none;}
+* {
+  box-sizing: border-box;
+}
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1170px;
+            margin: auto;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer{
+            background-color: #b30059 ;
+            background-image:linear-gradient(to bottom right #800060,#66004d); 
+            padding: 70px 0;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content:'';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #ac00e6 ;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+           
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color:#ffffff;
+            padding: 8px;
+        }
+        .footer-col .social a{
+            display: inline-block;
+            height:40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0px 8px 0px 8px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="navbar" >
+        <img src="bit.png" class="logo" >
+    <nav>
+    
+            <a  href="rithika.html">HOME</a>
+            <a class="active" href="about.html#">ABOUT US</a>
+            <a href="facilities2.html">FACILITIES</a>
+            <a href="https://maps.app.goo.gl/N7bEBP1xzvnUk2G17">VISIT</a>
+            <a href="Loginpage.html#">LOGIN</a>
+         
+    </nav>
+    </div>
+    <div class="sub-header">
+      <h1>About us</h1>
+    </div> 
+    <div class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <img src="hall.jpeg">
+        </div>
+        <div class="about-col">
+          <h1>Where you learn to Stay Ahead</h1>
+          <p>Bannari Amman Institute of Technology is an Autonomous, Self-financing Engineering College, Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai.<span id="dots">...</span><span id="more"> Nestled on the banks of The River Bhavani, BIT campus provides environment for learning in harmony with nature, away from the odds of the city life.
+            The spacious and the earth hugging buildings punctuated with landscaped courtyards and pathways are designed to emphasise the business ethics and or characteristics of an excellent centre for learning. The Campus hosts well planned academic blocks, computer centres, lecture halls, libraries, laboratories, conference halls, staff quarters, hostels and students' centres.
+          </span></p>
+          <button onclick="myFunction()" id="myBtn" class="btn">View more</button>
+          
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "View more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "View less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+
+  
+  
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="stayahead@bitsathy.ac.in">Email:stayahead@bitsathy.ac.in</a></li>
+                        <li><a href="+91 4295 226000">Phone Number: +91 4295 226000</a></li>
+                        <li><a href="#">Admission:+91 89401 26000</a></li>
+                        <li><a href="#">Fax Number:+91 4295 226666</a></li>
+                    </ul>
+                </div>
+ 
+                <div class="footer-col">
+                 <h4>Quick links</h4>
+                 <ul>
+                     <li><a href="https://camps.bitsathy.ac.in/CAMPS/CommonJSP/login.jsp">Camps</a></li>
+                     <li><a href="https://moodle.bitsathy.ac.in/">Moodle</a></li>
+                     <li><a href="https://camps.bitsathy.ac.in/CAMPS/CommonJSP/login.jsp">Campus Tour</a></li>
+                     <li><a href="https://sites.google.com/bitsathy.ac.in/reward-status/home">Reward Points Site</a></li>
+                 </ul>
+                 </div>
+ 
+                 <div class="footer-col">
+                     <h4>Follow us</h4>
+                     <div class="social">
+                         <a href="https://www.facebook.com/bitsathyindia" class="fa fa-facebook"></a>
+                         <a href="https://twitter.com/Bitsathyindia" class="fa fa-twitter"></a>
+                         <a href="https://in.linkedin.com/school/bitsathyindia/" class="fa fa-linkedin"></a>
+                         <a href="https://www.instagram.com/lifeatbit/" class="fa fa-instagram"></a>
+                     </div>
+             </div>
+         </div>
+     </footer>
+</body>
+
+</html>

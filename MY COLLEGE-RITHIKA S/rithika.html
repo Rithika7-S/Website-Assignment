@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://kit.fontawesome.com/b417169e35.js" crossorigin="anonymous"></script>
+<style>
+.header{
+  margin:0;
+ width: auto;
+ 
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+    margin-top: -40px;
+    margin-right: -10px;
+    margin-left: 250px;
+    padding-left: 2px;
+    width: 100px;
+    overflow: hidden;
+    background-color:  #b30059;
+    color:white;
+      -moz-border-radius-bottomleft: 12px;
+      -webkit-border-bottom-left-radius: 18px;
+}
+nav a{
+    display: block;
+    list-style: none;
+    margin: 2px 5px;
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+  background-color: black;
+  color: white;
+  height: 35px;
+}
+
+nav a.active {
+  background-color: #800040;
+  color: white;
+  height: 35px;
+  width: auto;
+  margin-left: -2px;
+}
+
+.button{
+	background-color: #00e600;
+	color: white;
+	padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 12px;
+    cursor: pointer;
+    width: auto;
+    
+}
+.button{
+  position: relative;
+  left:950px;
+  bottom:1px;
+  top: -30px;
+}
+.button{border-radius: 40px;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 100px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  text-align: center;
+}
+.reviews{
+    column-count: 2;
+    column-gap: 10px;
+    color:black;
+    font-family:comicsans;
+    font-size: 20px;
+    border:none;
+    margin: 30px;
+    padding: 100px 20px;
+    background-color:#ffffb3;
+    box-sizing: content-box;
+    
+}
+.about{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  padding: 0 0 20px 0;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.1s;
+  animation-name: fade;
+  animation-duration: 2.1s;
+}
+#circle-icon {
+    background: #ffc0c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 30px;
+}
+#circle-icon2 {
+    background: #cc99ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 30px;
+  
+
+}
+#circle-icon3 {
+    background: #80ff80;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.icon{
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -80px;
+  left:100px;
+  text-align: center;
+
+}
+.icon2{
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -80px;
+  left:400px;
+  text-align: center;
+
+}
+.icon3{
+  color: #f2f2f2;
+  font-size: 35px;
+  padding: 12px 20px;
+  position: absolute;
+  bottom: -80px;
+  left:700px;
+  text-align: center;
+
+}
+* {
+  box-sizing: border-box;
+}
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1170px;
+            margin: auto;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer{
+            background-color: #b30059 ;
+            background-image:linear-gradient(to bottom right #800060,#66004d); 
+            padding: 70px 0;
+           
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col{
+            width: 25%;
+            padding: 0 15px;
+            margin-top: 50px;
+
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content:'';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #ac00e6 ;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+           
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color:#ffffff;
+            padding: 8px;
+        }
+        .footer-col .social a{
+            display: inline-block;
+            height:40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0px 8px 0px 8px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+        }
+        
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+    <div class="navbar">
+        <img src="bit.png" class="logo" >
+    <nav>
+        
+            <a class="active" href="#home">HOME</a>
+            <a href="about.html#">ABOUT US</a>
+            <a href="facilities2.html">FACILITIES</a>
+            <a href="https://maps.app.goo.gl/N7bEBP1xzvnUk2G17">VISIT</a>
+            <a href="Loginpage.html#">LOGIN</a>
+            
+    </nav>
+    </div>
+    <button onclick="document.location='regform.html'"  class="button">Apply Now</button></div>
+</div>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="https://static.businessworld.in/article/article_extra_large_image/1616143247_9SQluK_Bannari_Amman_Institute_of_Technology.jpg" style="width:100%">
+    <div class="text">Get Ready<br><spam style="font-size: 70px;">To Discover<br></spam></div>
+    <div class="icon"><a href="achievements.html"><i class="fa fa-trophy" style="font-size:34px"id="circle-icon"></i></a><figcaption style="color: white; font-size: 16px;">Achievements</figcaption></div>
+    <div class="icon2"><a href="ugcourse.html"><i class='fas fa-graduation-cap' style="font-size:34px" id="circle-icon2"></i></a><figcaption style="color: white; font-size: 16px;">UG Courses</figcaption></div>
+    <div class="icon3"><a href="pgcourse.html"><i class='fas fa-plane-departure' style="font-size:34px" id="circle-icon3"></i></a><figcaption style="color: white; font-size: 16px;">PG Courses</figcaption></div>
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="https://getmyuni.azureedge.net/college-image/big/bannari-amman-institute-of-technology-bait-coimbatore.jpg" style="width:100%">
+    <div class="text">Get Ready<br><spam style="font-size: 70px;">To Discover<br></spam></div>
+    <div class="icon"><a href="achievements.html"><i class="fa fa-trophy" style="font-size:34px"id="circle-icon"></i></a><figcaption style="color: white; font-size: 16px;">Achievements</figcaption></div>
+    <div class="icon2"><a href="ugcourse.html"><i class='fas fa-graduation-cap' style="font-size:34px" id="circle-icon2"></i></a><figcaption style="color: white; font-size: 16px;"><a onclick="https://www.bitsathy.ac.in/achievements/"></a>UG Courses</figcaption></div>
+    <div class="icon3"><a href="pgcourse.html"><i class='fas fa-plane-departure' style="font-size:34px" id="circle-icon3"></i></a><figcaption style="color: white; font-size: 16px;">PG Courses</figcaption></div>
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="https://www.bitsathy.ac.in/assets/images/admission/students_centre.webp" style="width:100%">
+    <div class="text">Get Ready<br><spam style="font-size: 70px;">To Discover<br></spam></div>
+    <div class="icon"><a href="achievements.html"><i class="fa fa-trophy" style="font-size:34px"id="circle-icon"></i></a><figcaption style="color: white; font-size: 16px;">Achievements</figcaption></div>
+    <div class="icon2"><a href="ugcourse.html"><i class='fas fa-graduation-cap' style="font-size:34px" id="circle-icon2"></i></a><figcaption style="color: white; font-size: 16px;"><a onclick="https://www.bitsathy.ac.in/achievements/"></a>UG Courses</figcaption></div>
+    <div class="icon3"><a href="pgcourse.html"><i class='fas fa-plane-departure' style="font-size:34px" id="circle-icon3"></i></a><figcaption style="color: white; font-size: 16px;">Campus Tour</figcaption></div>
+    
+  </div>
+  
+  </div>
+  
+
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="stayahead@bitsathy.ac.in">Email:stayahead@bitsathy.ac.in</a></li>
+                        <li><a href="+91 4295 226000">Phone Number: +91 4295 226000</a></li>
+                        <li><a href="#">Admission:+91 89401 26000</a></li>
+                        <li><a href="#">Fax Number:+91 4295 226666</a></li>
+                    </ul>
+                </div>
+ 
+                <div class="footer-col">
+                 <h4>Quick links</h4>
+                 <ul>
+                     <li><a href="https://camps.bitsathy.ac.in/CAMPS/CommonJSP/login.jsp">Camps</a></li>
+                     <li><a href="https://moodle.bitsathy.ac.in/">Moodle</a></li>
+                     <li><a href="https://camps.bitsathy.ac.in/CAMPS/CommonJSP/login.jsp">Campus Tour</a></li>
+                     <li><a href="https://sites.google.com/bitsathy.ac.in/reward-status/home">Reward Points Site</a></li>
+                 </ul>
+                 </div>
+ 
+                 <div class="footer-col">
+                     <h4>Follow us</h4>
+                     <div class="social">
+                         <a href="https://www.facebook.com/bitsathyindia" class="fa fa-facebook"></a>
+                         <a href="https://twitter.com/Bitsathyindia" class="fa fa-twitter"></a>
+                         <a href="https://in.linkedin.com/school/bitsathyindia/" class="fa fa-linkedin"></a>
+                         <a href="https://www.instagram.com/lifeatbit/" class="fa fa-instagram"></a>
+                     </div>
+             </div>
+         </div>
+     </footer>
+</body>
+
+</html>
